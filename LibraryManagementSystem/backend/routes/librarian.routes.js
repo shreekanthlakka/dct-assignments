@@ -13,7 +13,7 @@ router
     .route("/")
     .post(
         isLoggedIn,
-        customRole(["labrarian"]),
+        customRole(["librarian"]),
         checkSchema(librarianValidationSchema),
         createLibrarianProfile
     )

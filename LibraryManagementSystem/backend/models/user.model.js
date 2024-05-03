@@ -13,6 +13,7 @@ const userSchema = new mongoose.Schema(
         },
         password: {
             type: String,
+            select: false,
         },
         role: {
             type: String,
@@ -20,10 +21,10 @@ const userSchema = new mongoose.Schema(
         },
         phoneNumber: { type: String },
         isVerified: { type: Boolean, default: false },
-        refreshToken: String,
-        accessToken: String,
-        forgotPasswordToken: String,
-        forgotPasswordExpiry: String,
+        refreshToken: { type: String, select: false },
+        accessToken: { type: String, select: false },
+        forgotPasswordToken: { type: String, select: false },
+        forgotPasswordExpiry: { type: String, select: false },
         authenticatedAt: [Date],
     },
     { timestamps: true }

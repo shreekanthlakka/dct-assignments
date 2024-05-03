@@ -24,3 +24,9 @@ POST /api/v1/books 201 390 - 25.042 ms
 GET /api/v1/books 200 694 - 3.424 ms
 GET /api/v1/books/661c2bf8bea2d67132343081 200 385 - 7.642 ms
 DELETE /api/v1/books/661c2bf8bea2d67132343081 - - - - ms
+POST /api/v1/librarian 402 844 - 3.092 ms
+POST /api/v1/users/login 200 1057 - 163.232 ms
+POST /api/v1/librarian 402 844 - 2.929 ms
+POST /api/v1/librarian 201 265 - 29.337 ms
+GET /api/v1/librarian 200 806 - 8.910 ms
+GET /api/v1/librarian 200 487 - 22.831 ms
