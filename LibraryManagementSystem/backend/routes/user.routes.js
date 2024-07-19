@@ -25,7 +25,7 @@ router.route("/logout").post(isLoggedIn, logout);
 
 /**
  *
- * admin routes
+ * admin routes to be added
  */
 
 router.route("/admin").get(isLoggedIn, customRole(["admin"]), adminGetAllUsers);
